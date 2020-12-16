@@ -1,93 +1,108 @@
-/* Sticky footer styles
-      -------------------------------------------------- */
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
-
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
-
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
-
-      /* Lastly, apply responsive CSS fixes as necessary */
-      }
-
-
-
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
-
-      .container {
-        width: auto;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
-	  .muted
-	  {
-	  color: #fff;
-	 }
-	 .muted a
-	  {
-	  color: #fff;
-	 }
-	  #sidebar
-	  {
-box-shadow: 0 0 1px 1px rgba(119, 119, 119, 0.4);
-box-shadow: 0 0 1px 1px rgba(119, 119, 119, 0.4);
--moz-box-shadow: 0 0 1px 1px rgba(119, 119, 119, 0.4);
--webkit-box-shadow: 0 0 1px 1px rgba(119, 119, 119, 0.4);
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-	 }
-	 legend {
-border-style: none none none;
-    color: #333333;
-    display: block;
-    font-size: 21px;
-    line-height: 40px;
-    margin-bottom: 20px;
-    padding: 0;
-    width: 100%;
-}
-.post_description
+.errormsg
 {
-padding:0px 15px 15px 15px;
+color:red;
+font-size:x-small;
 }
-.post_description h1
-{
-border-bottom: 1px dotted;
-font-size: 26px;
+#views {
+    background: url("../images/sprite_v12.png") no-repeat scroll -11px -61px transparent;
+    padding-left: 14px;
 }
-.post_description h2
-{
-border-bottom: 1px dotted;
-font-size: 22px;
+#title_m {
+	background-color: rgba(25, 25, 25, 0.9);
+	color: rgba(255, 255, 255, 1);
+	bottom: 0px;
+	left: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 0px;
+	position: absolute;
+	width: 100%;
 }
-.post_description h3
-{
-border-bottom: 1px dotted;
-font-size: 22px;
+
+#sort {
+	padding-top: 10px;
+	text-align: right;
+	padding-right: 15px;
 }
-.post_description h4
-{
-border-bottom: 1px dotted;
-font-size: 22px;
+
+#sort a img {
+	margin-bottom: -2px;
+	height: 14px;
+	width: 12px;
+}
+
+#sort select {
+    padding:3px;
+    margin: 0;
+	width:65px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    background: #fff;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   
+}
+
+#sort label {position:relative}
+#sort label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:-4px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+#sort label:before {
+    content:'';
+    margin-top: -6px;
+    right:6px; top:0px;
+    width:20px; height:22px;
+    background:#fff;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+.buttons_p_n {
+    position: relative;
+    margin: 0px 0px 0px -20px;
+    top: 220px;
+    width: 781px;
+    z-index: 1;
+    float: left;
+    height: 0px;
+}
+.prev_p {
+    background: url("../images/button_left.png") repeat scroll 0% 0% transparent;
+    float: left;
+    width: 55px;
+    height: 57px;
+}
+.prev_p:active {
+    margin-top: 5px;
+}
+.next_p {
+    background: url("../images/button_right.png") repeat scroll -55px 0px transparent;
+    float: right;
+    width: 55px;
+    height: 57px;
+}
+.next_p:active {
+    margin-top: 5px;
 }
